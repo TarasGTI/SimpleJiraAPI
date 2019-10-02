@@ -1,0 +1,4 @@
+import com.atlassian.jira.component.ComponentAccessor
+def projectManager = ComponentAccessor.getProjectManager()
+def project = projectManager.getProjectObjByKeyIgnoreCase("SomeProjectID")
+projectManager.setCurrentCounterForProject(project, 0)
